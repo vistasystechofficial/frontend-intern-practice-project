@@ -97,7 +97,7 @@ export function AppSidebar() {
                 <SidebarGroup>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            <img className="p-6 h-" src={logo} alt="" />
+                            <img className="p-6 " src={logo} alt="" />
                             <hr />
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
