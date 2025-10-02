@@ -1,5 +1,5 @@
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
-import logo from '../../public/logo.png'
+import logo from '/logo.png'
 import { LuChartColumn } from "react-icons/lu";
 import { GoPeople } from "react-icons/go";
 
@@ -20,68 +20,77 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
+    SidebarMenuAction
 } from "@/components/ui/sidebar"
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 // Menu items.
 const items = [
     {
         title: "Dashboard",
-        url: "#",
+        url: '/',
         icon: LuChartColumn,
     },
     {
         title: "HRIS",
-        url: "#",
+        url: '/hris',
         icon: GoPeople,
     },
     {
         title: "AMS",
-        url: "#",
+        url: "/ams",
         icon: MdAccessTime,
     },
     {
         title: "Monitoring",
-        url: "#",
+        url: "/monitoring",
         icon: FiAlertTriangle,
     },
     {
         title: "Projects",
-        url: "#",
+        url: "/projects",
         icon: LuProjector,
     },
     {
         title: "Clients",
-        url: "#",
+        url: "/clients",
         icon: GoPeople,
     },
     {
         title: "Communication",
-        url: "#",
+        url: "/communication",
         icon: LuMessageSquare,
     },
     {
         title: "Help Desk",
-        url: "#",
+        url: "/helpdesk",
         icon: LuCircleHelp,
     },
     {
         title: "Reports",
-        url: "#",
+        url: "/reports",
         icon: LuFileText,
     },
     {
         title: "Admin Logs",
-        url: "#",
+        url: "/adminlogs",
         icon: LuFileText,
     },
     {
         title: "Settings",
-        url: "#",
+        url: "/settings",
         icon: LuSettings,
     },
 ]
 
 export function AppSidebar() {
+    const location = useLocation();
+
+    const [curUrl,setCurUrl] = useState("/");
+    useEffect(()=>{
+        setCurUrl(location.pathname)
+    },[location.pathname])
     return (
         <Sidebar>
             <SidebarContent>
@@ -92,12 +101,16 @@ export function AppSidebar() {
                             <hr />
                             {items.map((item) => (
                                 <SidebarMenuItem key={item.title}>
+                                    
                                     <SidebarMenuButton asChild>
-                                        <a href={item.url}>
+                                    
+                                        <NavLink className={curUrl===item.url?"text-blue-600 font-medium":""}  to={item.url} 
+                                        >
                                             <item.icon />
-                                            <span>{item.title}</span>
-                                        </a>
+                                            {item.title}
+                                        </NavLink>
                                     </SidebarMenuButton>
+
                                 </SidebarMenuItem>
                             ))}
                         </SidebarMenu>

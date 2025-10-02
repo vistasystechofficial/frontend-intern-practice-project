@@ -19,8 +19,9 @@ import {
 } from "@/components/ui/select"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 const Communication = () => {
+    console.log(window.location.pathname);
     return (
-        <div style={{height:"calc(100vh - 128px)"}} className='p-10 bg-[#f9f9fa] w-full overflow-scroll'>
+        <div style={{height:"calc(100vh - 128px)"}} className='p-10 bg-[#f9f9fa] w-full overflow-y-scroll'>
             <div className='flex justify-between items-center mb-6'>
                 <div>
                     <h3 className='text-2xl font-bold mb-2'>Communication Center</h3>

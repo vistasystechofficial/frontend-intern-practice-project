@@ -3,9 +3,10 @@ import './App.css'
 import NavBar from './components/NavBar'
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
-import Communication from './components/Communication'
+import Communication from './pages/Communication'
 import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
       <AppSidebar />
       <div className="w-full min-h-full flex flex-col">
         <NavBar className="w-full h-16 grow-0" />
-        <Communication style={{maxHeight:"calc(100vh-128px)",}} className="overflow-scroll" />
+        <Outlet />
         <Footer className="w-full h-16 grow-0" sticky={sticky} />
       </div>
     </SidebarProvider>

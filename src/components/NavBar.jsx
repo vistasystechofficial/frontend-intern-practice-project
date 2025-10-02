@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button"
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { Badge } from "@/components/ui/badge"
-import dp from '../../public/dp.jpg'
+import dp from '/dp.jpg'
 import { MdLogout } from "react-icons/md";
 import { SidebarTrigger } from "@/components/ui/sidebar"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -12,6 +12,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+
     return (
         <div className="flex sticky top-0 bg-white px-10 justify-between w-full py-3 overflow-hidden">
             <div className="flex items-center">
