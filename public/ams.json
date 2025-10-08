@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Alice Owner",
+        "employeeId": "ACME-001",
+        "department": "Executive",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "Absent",
+        "source": "N/A",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Basic Ali",
+        "employeeId": "VS:1234",
+        "department": "Eng.",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "Absent",
+        "source": "N/A",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Betty Admin",
+        "employeeId": "ACME-003",
+        "department": "Operations",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "Absent",
+        "source": "N/A",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Bob Admin",
+        "employeeId": "ACME-002",
+        "department": "Administration",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "Absent",
+        "source": "N/A",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Charlie Employee",
+        "employeeId": "ACME-004",
+        "department": "Engineering",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "Absent",
+        "source": "N/A",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Dana Developer",
+        "employeeId": "ACME-005",
+        "department": "Engineering",
+        "date": "Oct 7, 2025",
+        "checkIn": "09:12",
+        "checkOut": "17:34",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "8.4h"
+    },
+    {
+        "name": "Eli Tester",
+        "employeeId": "ACME-006",
+        "department": "Quality Assurance",
+        "date": "Oct 7, 2025",
+        "checkIn": "09:45",
+        "checkOut": "16:58",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "7.2h"
+    },
+    {
+        "name": "Fay Finance",
+        "employeeId": "ACME-007",
+        "department": "Finance",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "On Leave",
+        "source": "Leave Application",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Gary HR",
+        "employeeId": "ACME-008",
+        "department": "HR",
+        "date": "Oct 7, 2025",
+        "checkIn": "08:59",
+        "checkOut": "17:10",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "8.2h"
+    },
+    {
+        "name": "Hannah Helpdesk",
+        "employeeId": "ACME-009",
+        "department": "IT Support",
+        "date": "Oct 7, 2025",
+        "checkIn": "09:30",
+        "checkOut": "18:00",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "8.5h"
+    },
+    {
+        "name": "Ivan Intern",
+        "employeeId": "ACME-010",
+        "department": "Engineering",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "Absent",
+        "source": "N/A",
+        "hours": "0.0h"
+    },
+    {
+        "name": "Judy Legal",
+        "employeeId": "ACME-011",
+        "department": "Legal",
+        "date": "Oct 7, 2025",
+        "checkIn": "10:05",
+        "checkOut": "17:20",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "7.1h"
+    },
+    {
+        "name": "Karl Sales",
+        "employeeId": "ACME-012",
+        "department": "Sales",
+        "date": "Oct 7, 2025",
+        "checkIn": "08:50",
+        "checkOut": "17:45",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "8.9h"
+    },
+    {
+        "name": "Lana Marketing",
+        "employeeId": "ACME-013",
+        "department": "Marketing",
+        "date": "Oct 7, 2025",
+        "checkIn": "09:20",
+        "checkOut": "17:00",
+        "status": "Present",
+        "source": "Biometric",
+        "hours": "7.7h"
+    },
+    {
+        "name": "Moe Logistics",
+        "employeeId": "ACME-014",
+        "department": "Logistics",
+        "date": "Oct 7, 2025",
+        "checkIn": "--:--",
+        "checkOut": "--:--",
+        "status": "On Leave",
+        "source": "Leave Application",
+        "hours": "0.0h"
+    }
+]

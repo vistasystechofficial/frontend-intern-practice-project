@@ -7,7 +7,13 @@ import Communication from './pages/Communication'
 import Footer from './components/Footer'
 import { useEffect, useState } from 'react'
 import { Outlet } from 'react-router-dom'
-
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
 function App() {
 
   let footerSticky = true;
@@ -21,16 +27,19 @@ function App() {
     }
   }, [footerSticky])
 
-  return (
+  const queryClient = new QueryClient();
 
-    <SidebarProvider className="h-full">
-      <AppSidebar />
-      <div className="w-full min-h-full flex flex-col">
-        <NavBar className="w-full h-16 grow-0" />
-        <Outlet />
-        <Footer className="w-full h-16 grow-0" sticky={sticky} />
-      </div>
-    </SidebarProvider>
+  return (
+    <QueryClientProvider client={queryClient}>
+      <SidebarProvider className="h-full">
+        <AppSidebar />
+        <div className="w-full min-h-full flex flex-col">
+          <NavBar className="w-full h-16 grow-0" />
+          <Outlet />
+          <Footer className="w-full h-16 grow-0" sticky={sticky} />
+        </div>
+      </SidebarProvider>
+    </QueryClientProvider>
   )
 }
 
